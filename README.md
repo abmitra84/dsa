@@ -43,6 +43,8 @@ N and X are integers within the range [1..100,000];
 each element of array A is an integer within the range [1..X].
 
 # Solution
+
+```
 def solution(X, A):
     # Implement your solution here
     d = {x:-1 for x in range(1,X+1)}
@@ -58,3 +60,4 @@ def solution(X, A):
             prev = v
 
     return prev
+```
