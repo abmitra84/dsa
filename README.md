@@ -41,3 +41,20 @@ Write an efficient algorithm for the following assumptions:
 
 N and X are integers within the range [1..100,000];
 each element of array A is an integer within the range [1..X].
+
+# Solution
+def solution(X, A):
+    # Implement your solution here
+    d = {x:-1 for x in range(1,X+1)}
+    for i,e in enumerate(A):
+        if d[e] ==-1:
+            d[e]=i  # stores the min pos
+    
+    prev = -1
+    for k,v in d.items():
+        if v == -1:
+            return v
+        elif v > prev:
+            prev = v
+
+    return prev
