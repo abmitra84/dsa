@@ -37,5 +37,7 @@ def solution(A):
         else:
             return A_sorted[j] + 1
 ```
+
 Passed 100%
+
 Time Complexity O(N or O (N log(N))
